@@ -8,6 +8,7 @@
 	<listener
 	class-name="com.qa.amazon.listeners.ExtentReportListener" />
 </listeners>
+
 	<test name="amazon Home Page Test">
 		<classes>
 			<class name="com.qa.amazon.tests.HomePageTest" />

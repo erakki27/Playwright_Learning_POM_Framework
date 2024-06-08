@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [amazon Test Regression PW Suite]" guice-stage="DEVELOPMENT" verbose="4">
-  <listeners>
-    <listener class-name="com.qa.amazon.listeners.ExtentReportListener"/>
-  </listeners>
-  <test thread-count="5" parallel="tests" name="amazon Login Page Test(failed)" verbose="4">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.amazon.tests.LoginPageTest">
+      <class name="com.qa.amazon.tests.ProductPageTest">
         <methods>
-          <include name="signInPagenavigationtest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="signInTest"/>
+          <include name="checkcountafterddingbroduct"/>
+          <include name="checkcountbeforeaddingbroduct"/>
         </methods>
-      </class> <!-- com.qa.amazon.tests.LoginPageTest -->
+      </class> <!-- com.qa.amazon.tests.ProductPageTest -->
     </classes>
-  </test> <!-- amazon Login Page Test(failed) -->
-</suite> <!-- Failed suite [amazon Test Regression PW Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
